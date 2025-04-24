@@ -19,17 +19,12 @@ public final class UniverseLib {
             return new NormalEnvironment();
         }
     }
+    public static void unloadWorldAsync(World world) {
+        ENVIRONMENT.unloadWorldAsync(world);
+    }
 
     public static Environment getEnvironment() {
         return ENVIRONMENT;
-    }
-
-    public static void runTaskInWorldThread(Plugin plugin, Entity entity, Runnable task) {
-        ENVIRONMENT.runTaskInWorldThread(plugin, entity, task);
-    }
-
-    public static void runTaskInWorldThread(Plugin plugin, World world, Runnable task) {
-        ENVIRONMENT.runTaskInWorldThread(plugin, world, task);
     }
 
     public static boolean isUniverse() {
