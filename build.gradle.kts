@@ -14,4 +14,5 @@ repositories {
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    compileOnly("net.kyori:adventure-api:4.19.0")
 }
